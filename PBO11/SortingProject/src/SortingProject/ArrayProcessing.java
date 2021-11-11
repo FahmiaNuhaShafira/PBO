@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package SortingProject;
-
 import java.util.Scanner;
 /**
  *
@@ -68,13 +67,11 @@ public class ArrayProcessing {
     }
 
     void output(){
-    System.out.println("Rerata        : " + this.hitungRerata(this.dataBil));
-    System.out.println("Nilai min     : " + this.cariMin(this.dataBil));
-    System.out.println("Nilai max     : " + this.cariMax(this.dataBil));
-    System.out.println("Sorting       : ");
+    System.out.println("Nilai Rerata  : " + this.hitungRerata(this.dataBil));
+    System.out.println("Nilai Min     : " + this.cariMin(this.dataBil));
+    System.out.println("Nilai Max     : " + this.cariMax(this.dataBil));
+    System.out.println("Sorting Nilai : ");
     int[] dataArray; 
-            dataArray = this.urutkan();
-    
-    }
-    
+            dataArray = this.urutkan(); 
+    }    
 }
