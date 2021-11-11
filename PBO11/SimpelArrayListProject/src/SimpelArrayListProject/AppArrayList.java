@@ -25,25 +25,22 @@ public class AppArrayList {
         print("Cari String :  ");
         String mencari = carikan.nextLine();
         if(binarySearch(DATA,mencari) > -1){
-            print("String " + mencari + " ada di index ke " + binarySearch(DATA,mencari) +" di dalam data.");
+            print("String " + mencari + "index ke " + binarySearch(DATA,mencari) +"dalam list");
         } else {
-            print("String " + mencari + " tidak ada");
-        }
-        
+            print("String " + mencari + " tidak ada dalam list");
+        }       
     }
     void Menghapus_Data() {
         Scanner menghapus = new Scanner(System.in);
-        print("Silahkan String yang mau dihapus : ");
+        print("Hapus String : ");
         String menghapuskan = menghapus.nextLine();
         if(binarySearch(DATA,menghapuskan) > -1){
             DATA.remove(binarySearch(DATA,menghapuskan));
-            print("String " + menghapuskan + " sudah dihapus di dalam data.");
+            print("String " + menghapuskan + " sudah dihapus dalam list");
         } else {
-            print("String " + menghapuskan + " tidak ada dalam data.");
-        }
-        
-    }
-    
+            print("String " + menghapuskan + " tidak ada dalam list");
+        }    
+    }   
     void Menampilkan_Data() {
         System.out.println("Daftar string dalam array list :" + DATA);
     }
