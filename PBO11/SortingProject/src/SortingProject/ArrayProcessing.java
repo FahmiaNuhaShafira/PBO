@@ -48,7 +48,7 @@ public class ArrayProcessing {
         }
         return min;
     }
-    int []urutkan(){
+    int []urutkanNilai(){
        int[] dataArray = this.dataBil;
        for (a = this.n - 1; a >= 0; a--) {
             for (j = 0; j < a; j++) {
@@ -57,21 +57,19 @@ public class ArrayProcessing {
                     dataArray[j] = dataArray[j+1];
                     dataArray[j+1]=temp;
                 }
-            }
-        
+            }      
         } 
         for(int i=0;i<n;i++){
            System.out.println(dataArray[i]);
         }
        return dataArray;
     }
-
     void output(){
     System.out.println("Nilai Rerata  : " + this.hitungRerata(this.dataBil));
     System.out.println("Nilai Min     : " + this.cariMin(this.dataBil));
     System.out.println("Nilai Max     : " + this.cariMax(this.dataBil));
     System.out.println("Sorting Nilai : ");
     int[] dataArray; 
-            dataArray = this.urutkan(); 
+            dataArray = this.urutkanNilai(); 
     }    
 }
