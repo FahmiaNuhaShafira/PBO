@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package MinMaxProject;
-
 /**
  *
  * @author FAHMIANUHA
@@ -19,6 +18,5 @@ public class MinMaxProject {
         ArrayProcessing R = new ArrayProcessing();
         R.input();
         R.output();
-    }
-        
+    }        
 }
