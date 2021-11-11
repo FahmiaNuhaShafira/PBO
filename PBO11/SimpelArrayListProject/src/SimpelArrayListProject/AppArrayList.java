@@ -12,8 +12,7 @@ import java.util.ArrayList;
  * @author FAHMIANUHA
  */
 public class AppArrayList {
-     ArrayList<String> DATA = new ArrayList<>();
-    
+     ArrayList<String> DATA = new ArrayList<>();  
     void Tambahkan_Data() {
         Scanner tambahkan = new Scanner(System.in);
         print("Masukkan data string : ");
@@ -23,12 +22,12 @@ public class AppArrayList {
     }
     void Mencari_Data() {
         Scanner carikan = new Scanner(System.in);
-        print("Silahkan String yang mau dicari  ");
+        print("Cari String :  ");
         String mencari = carikan.nextLine();
         if(binarySearch(DATA,mencari) > -1){
             print("String " + mencari + " ada di index ke " + binarySearch(DATA,mencari) +" di dalam data.");
         } else {
-            print("String " + mencari + " tidak ada dalam data.");
+            print("String " + mencari + " tidak ada");
         }
         
     }
