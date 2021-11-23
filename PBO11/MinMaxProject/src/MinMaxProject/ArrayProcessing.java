@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package MinMaxProject;
-
 import java.util.Scanner;
 /**
  *
@@ -49,15 +48,9 @@ public class ArrayProcessing {
         }
         return min;
     }
-	
-    
-    
-    
-   
     void output(){
-    System.out.println("Rerata      : " + this.hitungRerata(this.dataBil));
-    System.out.println("Nilai min   : " + this.cariMin(this.dataBil));
-    System.out.println("Nilai max   : " + this.cariMax(this.dataBil));
-    
+    System.out.println("Rerata Nilai : " + this.hitungRerata(this.dataBil));
+    System.out.println("Nilai Min    : " + this.cariMin(this.dataBil));
+    System.out.println("Nilai Max    : " + this.cariMax(this.dataBil));    
     }      
 }

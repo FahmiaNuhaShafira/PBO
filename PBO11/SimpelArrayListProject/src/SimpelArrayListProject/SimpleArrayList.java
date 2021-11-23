@@ -10,12 +10,10 @@ import java.util.Scanner;
  * @author FAHMIANUHA
  */
 public class SimpleArrayList {
-
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
         AppArrayList app = new AppArrayList();
         while(true){
             int inp;
@@ -30,7 +28,6 @@ public class SimpleArrayList {
             print("");
             print("Pilih nomor yang diinginkan = ");
             inp = input.nextInt();
-
             switch (inp) {
                 case 1:
                     app.Tambahkan_Data();
